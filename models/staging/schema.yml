@@ -1,5 +1,20 @@
 version: 2
 
+sources:
+  - name: jaffle_shop
+    description: The raw data for jaffle_shop
+    database: armin-playground
+    schema: jaffle_shop
+    tables:
+      - name: raw_customers
+        description: Contains all customers
+      
+      - name: raw_orders
+        description: Contains all orders
+
+      - name: raw_payments
+        description: Contains all payments  
+
 models:
   - name: stg_customers
     columns:
